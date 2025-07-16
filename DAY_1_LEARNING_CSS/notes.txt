@@ -1,0 +1,114 @@
+                                              DAY ONE OF CSS
+
+ CSS : CSS hai aisa code jisse humaari website rang birangi dikhne lagegi, to add colors and add any kind of 
+       visual modification we can use Css.
+
+ CSS SELECTORS : CSS selectors are patterns used to select and style HTML elements. They allow you to apply CSS rules 
+                 to specific parts of your webpage. The syntax for a CSS selector typically targets an HTML element based 
+                 on its type, class, ID, attributes, or relationship to other elements.
+
+ Here are the main types of CSS selectors :                     selector {
+                                                                         property : value;
+                                                                         }
+ 1. Universal SELECTORS :   *{
+                             margin : 0;
+                             padding : 0;
+                             }
+
+ 2. ELEMENT SELECTORS : h1 {
+                             color : red;
+                           }
+
+ 3. CLASS SELECTORS : targets elements with a specific class name .
+                      
+                      .box{
+                        background-clor: Blue;
+                      }
+
+ 4. ID SELECTOR : Target elements with a specific ID.
+
+                  #header{
+                    text-align : center;
+                  }
+
+ 5. Attributes Selector : ([type = "type"]): Targets elements based on attributes.
+
+                          input[type="text"]{
+                            border : 1px solid black;
+                          }
+
+ # Specificity Hierarchy : 
+  
+  1. Inline Styles: style attribute in the HTML element (this has the highest precedence)
+     
+    a. Example: <p style="color: red;">Hello World</p>
+
+    b. Specificity: 1,0,0,0
+
+ 2. ID Selectors: Selects an element based on its id attribute
+    a.Example: #header { color: blue; }
+    b.Specificity: 0,1,0,0
+
+ 3. Class Selectors, Attribute Selectors, Pseudo-Classes: These are less specific than IDs but more specific than type selectors
+    a.Example: .menu { color: green; }, input[type="text"] { color: purple; }, :hover { color: orange; }
+    b.Specificity: 0,0,1,0
+
+ 4. Type Selectors (Element Selectors): Selects an element based on its tag name
+
+    a.Example: p { color: black; }
+    b.Specificity: 0,0,0,1
+
+
+Example of Specificity Calculation :  
+
+# HTML CODE  : <p id="intro" class="highlight">Hello, World!</p>
+# CSS: p {
+         color: blue; /* Specificity: 0,0,0,1 */
+        }
+
+       .highlight {
+       color: red; /* Specificity: 0,0,1,0 */
+            }
+
+        #intro {
+       color: green; /* Specificity: 0,1,0,0 */
+         }
+
+
+ In this case, the element <p> with id="intro" and class="highlight" would have the following rules applied:
+
+ 1. p { color: blue; } (Specificity: 0,0,0,1)
+
+ 2. .highlight { color: red; } (Specificity: 0,0,1,0)
+
+ 3. #intro { color: green; } (Specificity: 0,1,0,0)
+
+The rule with the highest specificity is #intro { color: green; } because ID selectors have higher precedence than class
+selectors and type selectors. Therefore, the text color of this <p> element will be green.
+
+
+# General Rule for Specificity:
+
+1. Inline styles have the highest precedence, followed by
+2. ID selectors, followed by
+3. Class selectors, pseudo-classes, and attribute selectors, followed by
+4. Type (element) selectors.
+
+If two selectors have the same specificity, the last one defined in the CSS will be applied.
+
+
+
+
+ # Basics Of CSS : Selectors are used to target Html Elements .
+
+ 1. Pseudo-classes : (:hover, :focus,:nth-child) : Apply styles based on state.
+
+   EXAMPLE : a:hover{
+               color : green;
+                  }
+
+ 2. Pseudo-Elements : (::before, ::after) : styles specific partsof the elements.
+
+  EXAMPLE :   p::first-letter{
+                font-size:2rem;
+                }
