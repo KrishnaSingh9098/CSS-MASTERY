@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: reddish blue;
+}
+
+p{
+    font-size: 2em;
+}
+
+
+section {
+    width: 500px;
+    height: 500px;
+}
+
+.auto{
+    width: 
+    50%; ;
+    height: 50%;
+    background-color: red;
+
+}
+
+
+.jojo{
+    width: 50vh;
+    background-color: teal;
+    height: 10%;
+}
+

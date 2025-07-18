@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+}
+
+.link:link{
+    color: rgb(224, 15, 29);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.open:hover{
+    color: rgb(21, 208, 145);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.lin:active{
+    color: chartreuse;
+}

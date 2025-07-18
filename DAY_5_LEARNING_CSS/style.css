@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(226, 182, 217);
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;  
+  /* text-decoration: underline; */
+}
+
+p{
+    line-height: 5 px;
+    letter-spacing: 2px;
+    /* word-spacing: 80px; */
+    /* font-weight: bold; */
+      font-family: "Permanent Marker", cursive;
+      font-weight: 400;
+  font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+    cursor: pointer;
+}

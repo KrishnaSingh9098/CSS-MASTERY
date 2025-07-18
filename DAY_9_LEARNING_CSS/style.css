@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+div{
+    background: rgb(25, 215, 215);
+    width:100px;
+    height: 100px;
+}
+span{
+    background: teal;
+    width: 200px;
+    height: 200px;
+}
