@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.container{
+    width: 90%;
+    height: 500px;
+    background: rgb(65, 62, 62);
+}
+
+
+.d{
+    width: 100px;
+    height: 100px;
+}
+
+.one{
+    background: red;
+    position: relative;
+    left: 200px;
+}
+
+.two{
+    background: blue;
+    position: absolute;
+    left: 200px;
+   top: 200px;
+}
+
+.three{
+    background: yellow;
+    position: fixed;
+  
+    left: 200px;
+}
+
+
+.three{
+    background: yellow;
+    position: sticky;
+  top: 100px;
+}

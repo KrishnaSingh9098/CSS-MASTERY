@@ -8,16 +8,63 @@
 html,body{
     height: 100%;
     width: 100%;
+    
 }
 
 
-div{
+/* div{
     background: rgb(25, 215, 215);
-    width:100px;
+    
     height: 100px;
-}
-span{
+} */
+/* span{
     background: teal;
     width: 200px;
     height: 200px;
+    display:inline-block;
+} */
+
+/* .okl{
+    display: inline;
+    background: #480808;
+}
+
+
+span{
+    background: rebeccapurple;
+    display: block;
+} */
+
+/* 
+.okl{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    box-shadow: 4px 5px 4px orange;
+} */
+
+
+h1{
+    text-shadow: 2px 2px 2px red;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parent{
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-weight: 200px;
+    font-size: 2rem;
+    font-style: italic;
+    height: 100px;
+    width: 100px;
+    background: teal;
+}
+
+.child{
+    position: relative;
+    left: 100px;
+    width: inherit;
+    height: inherit;
 }
