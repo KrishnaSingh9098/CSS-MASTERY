@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;              /* Set full height for centering to work */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s {
+  background: crimson;
+  width: calc(100px + 100px);  /* = 300px */
+  height: calc(100px - 50px);  /* = 50px */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: calc(20px*2);
+  border-radius: 17px calc(15px /10) 17px 2px;
+  padding:  calc(200px/10);
+}
+
