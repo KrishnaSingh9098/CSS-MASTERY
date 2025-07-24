@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;  
+}         
+/* 
+header:is(h1,h2,h3){
+    color: rgb(183, 109, 35);
+}
+ */
+
+
+:is(section, article, aside, nav) h1 {
+  color: teal; /* or use any valid color, "teal blue" is not valid */
+}
+
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    height: 100vh;
+}
+
+p::before{
+content: "HEllo";
+background: red;
+font-size: 20px;
+color: rgba(36, 214, 214, 0.897);
+font-weight: 20px;
+}
+
+
+
+p::after{
+    content: "bye";
+    background: red;
+font-size: 20px;
+color: rgba(211, 220, 220, 0.897);
+font-weight: 20px;
+} */
+
+body{
+    background: #333;
+  color: white;
+  
+}
+
+/* .section{
+    width: 42rem;
+    margin: 0 auto;
+    background: #c17b7b;
+    padding: 4rem;
+} */
+/* :not(){
+
+} */
+
+:root{
+    --primary-color:blue;
+    --font-size:4rem;
+    --bg-color:teal;
+    --p:20px;
+}
+
+
+h1{
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    background: var(--bg-color);
+   
+}
+
+h2{
+ padding: var(--p);
+}
+
+
+/* DRY PRINCIPLE IN CSS : DO NOT REPEAT YOURSELF */

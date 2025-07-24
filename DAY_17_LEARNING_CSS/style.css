@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    /* height: 100%; */
+    width: 100%;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > div{
+    /* width: 200px;
+    height: 200px;
+    background-color: magenta; */
+    /* transform: translateX(500px); */
+    /* transform: translate(100px, -50px); */
+    /* transform: rotate(10deg); */
+    /* transform: scale(2); */
+     /* transform: skew(20deg, -10deg); */
+}
+
+/* a {
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 10px 20px;
+    color: brown;
+      margin: calc(20px*2);
+  border-radius: 17px calc(15px /10) 17px 2px;
+   
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+} */
+
+/* a:hover {
+    background-color: brown;
+    color: white; 
+} */
+
+
+.container > div{
+    width: 300px;
+    height: 300px;
+    background: rgb(10, 10, 22);
+    /* animation */
+
+    animation-name:InAndOut ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.75,.65,1,.01);
+}
+
+@keyframes InAndOut {
+    0%{
+        transform: scale(2);
+    }
+    25%{
+        transform: scale(0.2);
+        background-color: teal;
+        transform: skew(20deg);
+    }
+    50%{
+        transform: skew(50deg);
+        background-color: blue;
+   border-radius: 50%;
+    }
+}

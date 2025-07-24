@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*BadWay*/
+
+
+section.one button {
+    background: transparent;
+    border: none;
+    margin: 10px;
+    background: rgb(6, 6, 6);
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+}
+
+
+section.two button {
+    background: transparent;
+    border: none;
+    margin: 10px;
+    background: rgb(6, 6, 6);
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+}
+
+section.two button:hover{
+    background-color: green;
+}

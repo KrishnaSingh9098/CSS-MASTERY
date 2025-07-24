@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body{
+    background-color: teal;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background: rgb(45, 36, 175);
+        font-size: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    body{
+        background: white;
+    }
+    h1{
+        border: 4px solid tan;
+        font-size: 1rem;
+    }
+}
