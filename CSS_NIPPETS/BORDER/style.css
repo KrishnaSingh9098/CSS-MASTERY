@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(2, 2, 10, 0.9);
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(2, 2, 10, 0.9);
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.card {
+    --border-radius: 1.5rem;
+    --bg-color: #393e41;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    color: white;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    position: relative;
+    font: 1em 'Jost', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/* Optional hover scaling */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Border animation */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--color), transparent);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: inherit;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card i {
+    font-size: 3.5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color);
+    transition: color 0.3s ease;
+}
+
+.card:hover i {
+    color: var(--color);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+.description {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+
+.card {
+    --border-radius: 1.5rem;
+    --bg-color: #393e41;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    color: white;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    position: relative;
+    font: 1em 'Jost', sans-serif;
+}
+
+
+.card i{
+    font-size: 3.5rem;
+    color: transparent;
+    --webkit-text-stroke: thin var(--color)
+}
